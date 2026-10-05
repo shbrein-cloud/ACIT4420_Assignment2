@@ -1,0 +1,23 @@
+SMART FITNESS SESSION ANALYZER
+Rejected and flagged records
+
+REJECTED ROWS (10 total)
+----------------------------------------------------------------------
+fitness_sessions_invalid.csv row 3    session=FIT-2026-101  field=heart_rate       heart_rate = 'fast' is not a whole number
+fitness_sessions_invalid.csv row 4    session=FIT-2026-101  field=participant_id   participant_id '001' does not match the required format ^P\d{3}$
+fitness_sessions_invalid.csv row 5    session=FIT-2026-101  field=activity_level   required field 'activity_level' is empty
+fitness_sessions_invalid.csv row 6    session=FIT-2026-101  field=signal_quality   signal_quality = 1.4 is outside the possible range 0.0-1.0
+fitness_sessions_invalid.csv row 7    session=FIT-26-102    field=session_id       session_id 'FIT-26-102' does not match the required format ^FIT-\d{4}-\d{3}$
+fitness_sessions_invalid.csv row 8    session=FIT-2026-102  field=participant_id   unknown participant 'P999' (known participants: P001, P002, P003)
+fitness_sessions_invalid.csv row 9    session=FIT-2026-102  field=timestamp        timestamp = 'two' is not a whole number
+fitness_sessions_invalid.csv row 10   session=FIT-2026-102  field=heart_rate       heart_rate = -15 is outside the possible range 35-205
+fitness_sessions_invalid.csv row 11   session=FIT-2026-102  field=skin_response    skin_response = -0.5 is outside the possible range 0.0-50.0
+fitness_sessions_invalid.csv row 12   session=FIT-2026-103  field=row              row is missing the column(s): signal_quality
+
+FLAGGED ROWS - accepted but excluded from the analysis (5 total)
+----------------------------------------------------------------------
+fitness_sessions.csv row 26 session=FIT-2026-005  t=0    signal_quality 0.34 is below the minimum 0.60
+fitness_sessions.csv row 27 session=FIT-2026-005  t=1    signal_quality 0.29 is below the minimum 0.60
+fitness_sessions.csv row 28 session=FIT-2026-005  t=2    signal_quality 0.25 is below the minimum 0.60
+fitness_sessions.csv row 29 session=FIT-2026-005  t=3    signal_quality 0.31 is below the minimum 0.60
+fitness_sessions.csv row 30 session=FIT-2026-005  t=4    signal_quality 0.28 is below the minimum 0.60

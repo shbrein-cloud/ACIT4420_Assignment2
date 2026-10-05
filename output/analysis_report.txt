@@ -1,0 +1,191 @@
+SMART FITNESS SESSION ANALYZER
+Analysis report
+
+Input files: participants.csv, fitness_sessions.csv, fitness_sessions_invalid.csv
+Rows accepted: 33  (of which flagged: 5)  rows rejected: 10
+
+======================================================================
+Session FIT-2026-001
+Participant: P001   Session: FIT-2026-001
+======================================================================
+CLASSIFICATION: RESTING
+Reason: Average heart rate stays close to the personal baseline (0.8 bpm difference, limit 12) and movement is low (activity 0.09, limit 0.3).
+
+Observations: 6 total, 6 usable, 0 rejected, 0 flagged (usable ratio 100%)
+  None - all observations passed validation.
+
+Summary of usable observations:
+  Measurement       Count      Mean       Min       Max
+  heart_rate            6     68.83        68        70
+  skin_response         6      1.19      1.17      1.22
+  temperature           6     32.43     32.40     32.50
+  activity_level        6      0.09      0.07      0.12
+  signal_quality        6      0.97      0.96      0.98
+
+Comparison with personal reference values:
+  heart_rate       reference       68   session    68.83   change  +0.83 bpm (+1.2%)
+  skin_response    reference     1.20   session     1.19   change -0.01 units (-0.8%)
+  temperature      reference    32.40   session    32.43   change    +0.03 C (+0.1%)
+
+Recovery analysis:
+  Compared the peak with the last 2 usable windows
+  Peak heart rate: 70 bpm at t=2 (2 bpm above baseline)
+  Heart rate at the end: 68.5 bpm (down 1.5 bpm from the peak, trend +0.03 bpm/window)
+  Activity drop from the peak: 0.03 (trend -0.001 per window)
+  Recovery detected: no
+
+======================================================================
+Session FIT-2026-002
+Participant: P002   Session: FIT-2026-002
+======================================================================
+CLASSIFICATION: MODERATE ACTIVITY
+Reason: Average heart rate is 28.0 bpm above baseline and average activity is 0.50. At least one exceeds the moderate threshold (12 bpm / 0.3) but the high-activity thresholds are not both reached.
+
+Observations: 6 total, 6 usable, 0 rejected, 0 flagged (usable ratio 100%)
+  None - all observations passed validation.
+
+Summary of usable observations:
+  Measurement       Count      Mean       Min       Max
+  heart_rate            6    102.00        78       118
+  skin_response         6      2.01      1.55      2.40
+  temperature           6     33.13     32.80     33.40
+  activity_level        6      0.50      0.22      0.68
+  signal_quality        6      0.94      0.93      0.96
+
+Comparison with personal reference values:
+  heart_rate       reference       74   session   102.00   change +28.00 bpm (+37.8%)
+  skin_response    reference     1.45   session     2.01   change +0.56 units (+38.6%)
+  temperature      reference    32.70   session    33.13   change    +0.43 C (+1.3%)
+
+Recovery analysis:
+  Compared the peak with the last 2 usable windows
+  Peak heart rate: 118 bpm at t=3 (44 bpm above baseline)
+  Heart rate at the end: 104.0 bpm (down 14.0 bpm from the peak, trend +4.23 bpm/window)
+  Activity drop from the peak: 0.18 (trend +0.041 per window)
+  Recovery detected: no
+
+======================================================================
+Session FIT-2026-003
+Participant: P003   Session: FIT-2026-003
+======================================================================
+CLASSIFICATION: HIGH ACTIVITY
+Reason: Average heart rate is 69.5 bpm above the personal baseline (threshold 42) and average activity is 0.75 (threshold 0.65).
+
+Observations: 6 total, 6 usable, 0 rejected, 0 flagged (usable ratio 100%)
+  None - all observations passed validation.
+
+Summary of usable observations:
+  Measurement       Count      Mean       Min       Max
+  heart_rate            6    132.50        72       162
+  skin_response         6      3.24      1.30      4.20
+  temperature           6     33.53     32.50     34.10
+  activity_level        6      0.75      0.25      0.94
+  signal_quality        6      0.94      0.92      0.97
+
+Comparison with personal reference values:
+  heart_rate       reference       63   session   132.50   change +69.50 bpm (+110.3%)
+  skin_response    reference     1.10   session     3.24   change +2.14 units (+194.5%)
+  temperature      reference    32.30   session    33.53   change    +1.23 C (+3.8%)
+
+Recovery analysis:
+  Compared the peak with the last 2 usable windows
+  Peak heart rate: 162 bpm at t=3 (99 bpm above baseline)
+  Heart rate at the end: 150.5 bpm (down 11.5 bpm from the peak, trend +14.66 bpm/window)
+  Activity drop from the peak: 0.06 (trend +0.107 per window)
+  Recovery detected: no
+
+======================================================================
+Session FIT-2026-004
+Participant: P001   Session: FIT-2026-004
+======================================================================
+CLASSIFICATION: RECOVERING
+Reason: The session contains real effort (peak heart rate 151 bpm, 83 bpm above baseline) followed by a clear wind-down: heart rate falls 58.0 bpm from the peak to 93.0 bpm at the end, and activity falls by 0.62. Heart rate and activity both decline after the peak, and at the end the heart rate is 25.0 bpm above baseline.
+
+Observations: 6 total, 6 usable, 0 rejected, 0 flagged (usable ratio 100%)
+  None - all observations passed validation.
+
+Summary of usable observations:
+  Measurement       Count      Mean       Min       Max
+  heart_rate            6    113.17        72       151
+  skin_response         6      2.58      1.35      3.90
+  temperature           6     33.28     32.60     33.90
+  activity_level        6      0.55      0.18      0.92
+  signal_quality        6      0.96      0.94      0.97
+
+Comparison with personal reference values:
+  heart_rate       reference       68   session   113.17   change +45.17 bpm (+66.4%)
+  skin_response    reference     1.20   session     2.58   change +1.38 units (+115.0%)
+  temperature      reference    32.40   session    33.28   change    +0.88 C (+2.7%)
+
+Recovery analysis:
+  Compared the peak with the last 2 usable windows
+  Peak heart rate: 151 bpm at t=2 (83 bpm above baseline)
+  Heart rate at the end: 93.0 bpm (down 58.0 bpm from the peak, trend -2.03 bpm/window)
+  Activity drop from the peak: 0.62 (trend -0.047 per window)
+  Recovery detected: yes
+
+======================================================================
+Session FIT-2026-005
+Participant: P002   Session: FIT-2026-005
+======================================================================
+CLASSIFICATION: INSUFFICIENT DATA
+Reason: Only 0 of 5 observations (0%) were usable. At least 6 usable observations and 50% of the session are needed for a reliable classification.
+
+Observations: 5 total, 0 usable, 0 rejected, 5 flagged (usable ratio 0%)
+  t=0    flagged   signal_quality 0.34 is below the minimum 0.60
+  t=1    flagged   signal_quality 0.29 is below the minimum 0.60
+  t=2    flagged   signal_quality 0.25 is below the minimum 0.60
+  t=3    flagged   signal_quality 0.31 is below the minimum 0.60
+  t=4    flagged   signal_quality 0.28 is below the minimum 0.60
+
+Summary of usable observations:
+  Measurement       Count      Mean       Min       Max
+  heart_rate            0       n/a       n/a       n/a
+  skin_response         0       n/a       n/a       n/a
+  temperature           0       n/a       n/a       n/a
+  activity_level        0       n/a       n/a       n/a
+  signal_quality        0       n/a       n/a       n/a
+
+Comparison with personal reference values:
+  heart_rate       reference       74   session      n/a   change        n/a (n/a)
+  skin_response    reference     1.45   session      n/a   change        n/a (n/a)
+  temperature      reference    32.70   session      n/a   change        n/a (n/a)
+
+Recovery analysis:
+  Not enough usable observations to examine recovery.
+
+======================================================================
+Session FIT-2026-101
+Participant: P001   Session: FIT-2026-101
+======================================================================
+CLASSIFICATION: INSUFFICIENT DATA
+Reason: Only 1 of 1 observations (100%) were usable. At least 6 usable observations and 50% of the session are needed for a reliable classification.
+
+Observations: 1 total, 1 usable, 0 rejected, 0 flagged (usable ratio 100%)
+  None - all observations passed validation.
+
+Summary of usable observations:
+  Measurement       Count      Mean       Min       Max
+  heart_rate            1     72.00        72        72
+  skin_response         1      1.30      1.30      1.30
+  temperature           1     32.50     32.50     32.50
+  activity_level        1      0.10      0.10      0.10
+  signal_quality        1      0.96      0.96      0.96
+
+Comparison with personal reference values:
+  heart_rate       reference       68   session    72.00   change  +4.00 bpm (+5.9%)
+  skin_response    reference     1.20   session     1.30   change +0.10 units (+8.3%)
+  temperature      reference    32.40   session    32.50   change    +0.10 C (+0.3%)
+
+Recovery analysis:
+  Not enough usable observations to examine recovery.
+
+======================================================================
+Sessions analyzed: 6
+  FIT-2026-001   resting              6 of 6 observations usable
+  FIT-2026-002   moderate activity    6 of 6 observations usable
+  FIT-2026-003   high activity        6 of 6 observations usable
+  FIT-2026-004   recovering           6 of 6 observations usable
+  FIT-2026-005   insufficient data    0 of 5 observations usable
+  FIT-2026-101   insufficient data    1 of 1 observations usable
+======================================================================
